@@ -54,7 +54,7 @@ if (false) {
 console.log(x); // undefined
 ```
 
-现在用`let`，创建词法作用域，则会报出一个错误`Uncaught ReferenceError: x is not defined`
+现在用`let`，创建词法作用域。在作用域外访问变量`x`，则会报出一个错误`Uncaught ReferenceError: x is not defined`
 
 ```javascript
 if (false) {
@@ -64,7 +64,7 @@ if (false) {
 console.log(x);
 ```
 
-在循环语句中使用`let`，也会报错`Uncaught ReferenceError: i is not defined`：
+在循环语句中使用`let`，在循环语句外访问变量`i`，也会报错`Uncaught ReferenceError: i is not defined`：
 
 ```javascript
 for (let i = 0; i < 10; i++) {
